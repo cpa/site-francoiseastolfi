@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Spectral&display=swap');
+
+body {
+    font-family: "Spectral";
+    padding-top: 110px;
+    letter-spacing: 0.3px;
+    font-size: 1.1rem;
+}
+
+h2 {
+    padding-top: 80px;
+    margin-top: -80px;
+
+    padding-bottom: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.titre {
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.soustitre {
+    font-size: x-large;
+    text-align: center;
+}
+
+#presentation {
+}
+
+#domaines {
+}
+
+#info {
+}
+
+#contact {
+}
