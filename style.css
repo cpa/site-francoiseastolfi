@@ -23,6 +23,10 @@ footer {
     margin-bottom: 30px;
 }
 
+ul {
+    margin-left: 40px;
+}
+
 .titre {
     font-size: xx-large;
     font-weight: bold;
