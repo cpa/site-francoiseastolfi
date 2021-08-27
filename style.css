@@ -6,6 +6,7 @@ body {
     letter-spacing: 0.3px;
     font-variant-ligatures: common-ligatures;
     background-color: #88FFF7;
+    font-size: 1.1rem;
 }
 
 h1 {
@@ -32,6 +33,10 @@ footer {
 .soustitre {
     font-size: x-large;
     text-align: center;
+}
+
+#contenu {
+    max-width: 800px;
 }
 
 #presentation {
