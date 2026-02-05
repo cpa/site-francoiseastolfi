@@ -46,185 +46,215 @@
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Françoise Astolfi — Psychologue clinicienne à Nice</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-	<div class="container">
-	    <nav class="navbar fixed-top  navbar-light bg-light">
-		<div class="container-fluid">
-		    <a class="navbar-brand" href="#"><strong>Françoise Astolfi</strong></a>
-		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
+	<nav class="fixed top-0 inset-x-0 z-50 border-b border-[#dee2e6] bg-[#f8f9fa]/95 backdrop-blur">
+	    <div class="mx-auto max-w-5xl px-4 py-4 md:flex md:items-center md:justify-between">
+		<div class="flex items-center justify-between">
+		    <a class="text-lg font-semibold tracking-wide text-[#212529]" href="#">Françoise Astolfi</a>
+		    <button id="nav-toggle" class="inline-flex items-center rounded-md border border-[#ced4da] px-3 py-2 text-sm font-medium text-[#212529] hover:border-[#adb5bd] hover:text-[#212529] md:hidden" type="button" aria-expanded="false" aria-controls="nav-menu">
+			Menu
 		    </button>
-		    <div class="collapse navbar-collapse" id="navbarText">
-			<ul class="navbar-nav me-auto">
-			    <li class="nav-item">
-				<a class="nav-link" aria-current="page" href="#presentation">Qui suis-je ?</a>
-			    </li>
-			    <li class="nav-item">
-				<a class="nav-link" href="#domaines">Services</a>
-			    </li>
-			    <li class="nav-item">
-				<a class="nav-link" href="#info">Informations pratiques</a>
-			    </li>
-			    <li class="nav-item">
-				<a class="nav-link" href="#contact">Contact</a>
-			    </li>				  				  
-			</ul>
-		    </div>
 		</div>
-	    </nav>
-	</div>
-	
-	<div class="container-md" id="">
-	    <div class="row align-items-center">
-		<div class="col-md-7">
-		    <p class="titre">Psychologue clinicienne<br>Docteur en psychologie</p>
-		    <p class="soustitre">Spécialisée en haut-potentiel</p>
-		    <p class="soustitre">Enfant - Adolescent - Adulte - Couple</p>
-                </div>
-		<div class="col-md text-center">
-		    <img src="francoise-astolfi.jpeg" alt="Photo de Françoise Astolfi" width="202" height="219">
+		<div id="nav-menu" class="hidden flex flex-col gap-3 pt-4 text-sm font-medium text-[#212529] md:flex md:flex-row md:items-center md:gap-6 md:pt-0">
+		    <a class="hover:text-[#212529]" href="#presentation" data-nav-link>Qui suis-je ?</a>
+		    <a class="hover:text-[#212529]" href="#domaines" data-nav-link>Services</a>
+		    <a class="hover:text-[#212529]" href="#info" data-nav-link>Informations pratiques</a>
+		    <a class="hover:text-[#212529]" href="#contact" data-nav-link>Contact</a>
 		</div>
 	    </div>
-	</div>
-	<div class="container" id="contenu">
-	    <div id="presentation" class="row">			
+	</nav>
+	
+	<header class="mx-auto max-w-5xl px-4 pt-6">
+	    <div class="grid gap-8 md:grid-cols-[minmax(0,1fr)_auto] md:items-center">
+		<div class="space-y-2 text-center md:text-left">
+		    <p class="titre">Dr Françoise Astolfi<br />Psychologue clinicienne – psychothérapeute</p>
+		    <p class="soustitre">Comprendre pour avancer</p>
+		    <p class="soustitre">Évaluer pour mieux accompagner</p>
+		    <p class="soustitre">Enfants • Adolescents • Adultes</p>
+		</div>
+		<div class="flex justify-center md:justify-end">
+		    <img class="rounded-xl border border-[#dee2e6] shadow-sm" src="francoise-astolfi.jpeg" alt="Photo de Françoise Astolfi" width="202" height="219">
+		</div>
+	    </div>
+	</header>
+	
+	<main class="mx-auto max-w-3xl space-y-16 px-4 pb-16">
+	    <section id="presentation" class="space-y-4">
 		<h1>Mon parcours et mes univers professionnels</h1>
 		<p><mark>Docteur en psychologie</mark>, j’ai connu, au cours de ma carrière, plusieurs univers professionnels dans le domaine de la psychologie et de l’Éducation.</p>
 		<p>J’ai rencontré le monde de la psychologie et la découverte de l’analyse existentielle. Ce fut une émotion, une passion et c’est devenu ma philosophie : comprendre l’autre sans le fractionner en sous-parties, mais l’accompagner au mieux dans sa recherche d’une condition humaine et d’une existence à sa mesure. <br />Si cette forme de thérapie oblige à comprendre l’autre sans grille de lecture et d’interprétation, elle exige de respecter un cadre existentiel rigoureux et méthodique.</p>
 		<p>Et puis, j’ai plongé dans le monde de l’éducation : <mark>enseignante, chef d’établissement, formatrice de formateurs</mark> en sciences humaines, en neurosciences, et conférencière. Directrice de recherches en master 2 et formatrice d’enseignants de premier et second degré.</p>
-		
-		<p>J’ai aussi connu la vie associative et la défense des jeunes à Haut Potentiel et de leurs parents en m’engageant comme <mark>vice-présidente et responsable de recherches de l’<a href="http://www.anpeip.org/" target="_blank" rel="noopener">ANPEIP</a></mark> (Fédération de parents d’enfants intellectuellement précoce). J’ai fait partie du comité d’expert de l’ANPEIP entre 1999 et 2011. Cette action s’est prolongée avec le rôle de <mark>médiatrice référente auprès du rectorat de Nice pour la prise en charge des Hauts Potentiels.</mark></p>
-		
+		<p>J’ai aussi connu la vie associative et la défense des jeunes à Haut Potentiel et de leurs parents en m’engageant comme <mark>vice-présidente et responsable de recherches de l’<a href="http://www.anpeip.org/" target="_blank" rel="noopener noreferrer">ANPEIP</a></mark> (Fédération de parents d’enfants intellectuellement précoce). J’ai fait partie du comité d’expert de l’ANPEIP entre 1999 et 2011. Cette action s’est prolongée avec le rôle de <mark>médiatrice référente auprès du rectorat de Nice pour la prise en charge des Hauts Potentiels.</mark></p>
 		<p>Aujourd’hui, j’ai créé ce cabinet pour mettre ma connaissance de ces univers et mes expériences différentes au service des personnes qui me contactent :</p>
-		<ul>
-		    <li>Des enfants, qui interrogent voire inquiètent leur entourage ou les enseignants par leur posture, leur comportement, leur angoisse, leur blocage?</li>
+		<ul class="list-disc space-y-2 pl-6">
+		    <li>Des enfants, qui interrogent voire inquiètent leur entourage ou les enseignants par leur posture, leur comportement, leur angoisse, leur blocage ?</li>
 		    <li>Des jeunes angoissés, démobilisés, découragés qui subissent le système scolaire sans trop savoir « ce qui cloche » mais qui en souffrent</li>
 		    <li>Des adultes qui s’interrogent sur leur vie, certains pour en changer, d’autres pour mieux maîtriser leur libre-arbitre et leurs choix de vie</li>
 		</ul>
-		<p>J’anime aussi <a href="https://www.nicematin.com/sujet/psytime" target="_blank" rel="noopener">« Psy Time »</a> avec mes amis Damien Allemand, journaliste et Athina Garino, psychologue, une aventure qui nous emporte dans le monde journalistique des « Podcast Nice Matin » sur toutes sortes de sujets de la vie.</p>
-	    </div>
-	    <div id="livre" class="row">
+		<p>J’anime aussi <a href="https://www.nicematin.com/sujet/psytime" target="_blank" rel="noopener noreferrer">« Psy Time »</a> avec mes amis Damien Allemand, journaliste et Athina Garino, psychologue, une aventure qui nous emporte dans le monde journalistique des « Podcast Nice Matin » sur toutes sortes de sujets de la vie.</p>
+	    </section>
+	    <section id="livre" class="space-y-4">
 		<h1>École et haut potentiel : la face cachée</h1>
-		<div class="col-md-8">
-		    <p>Toute ma vie, j’ai lutté contre les préjugés qui visent les jeunes à haut potentiel. Si la précocité intellectuelle est un concept bien connu, elle n’est pas toujours correctement identifiée par la communauté enseignante.</p>
-		    <p>Dans cet essai éclairant, j’ai voulu transmettre mon expérience de terrain, de la maternelle à l’université. Je retrace les histoires d’Emmanuelle, Vilario et bien d’autres, et propose des analyses et ressources pour les parents et professionnels confrontés à des formes d’intelligence inattendues.</p>
-		    <p>Peut-être y retrouverez-vous votre enfant, quelqu’un que vous connaissez bien… ou vous-même ?</p>
-		</div>
-		<div class="col-md-4">
-		    <div class="md-container p-2">
-			<a target="_blank" href="https://livre.fnac.com/a16429028/Francoise-Astolfi-Ecole-et-haut-potentiel-La-face-cachee"><img src="ecole-et-haut-potentiel-la-face-cachee.jpg" class="img-fluid rounded" alt="Couverture du livre de Françoise Astolfi"/></a>
-			<p class="text-center">
-			    
-			    <a target="_blank" href="https://livre.fnac.com/a16429028/Francoise-Astolfi-Ecole-et-haut-potentiel-La-face-cachee"><button type="button" class="m-2 btn btn-primary">Acheter chez le libraire</button></a></p>
+		<div class="grid gap-6 md:grid-cols-[minmax(0,1fr)_280px] md:items-start">
+		    <div class="space-y-4">
+			<p>Toute ma vie, j’ai lutté contre les préjugés qui visent les jeunes à haut potentiel. Si la précocité intellectuelle est un concept bien connu, elle n’est pas toujours correctement identifiée par la communauté enseignante.</p>
+			<p>Dans cet essai éclairant, j’ai voulu transmettre mon expérience de terrain, de la maternelle à l’université. Je retrace les histoires d’Emmanuelle, Vilario et bien d’autres, et propose des analyses et ressources pour les parents et professionnels confrontés à des formes d’intelligence inattendues.</p>
+			<p>Peut-être y retrouverez-vous votre enfant, quelqu’un que vous connaissez bien… ou vous-même ?</p>
+		    </div>
+		    <div>
+			<div class="rounded-xl border border-[#dee2e6] bg-white/80 p-4 shadow-sm">
+			    <a target="_blank" href="https://livre.fnac.com/a16429028/Francoise-Astolfi-Ecole-et-haut-potentiel-La-face-cachee" rel="noopener noreferrer"><img class="w-full rounded-md" src="ecole-et-haut-potentiel-la-face-cachee.jpg" alt="Couverture du livre de Françoise Astolfi"/></a>
+			    <p class="mt-3 text-center">
+				<a class="inline-flex items-center justify-center rounded-md bg-[#0d6efd] px-4 py-2 text-sm font-semibold text-white hover:bg-[#0b5ed7]" target="_blank" href="https://livre.fnac.com/a16429028/Francoise-Astolfi-Ecole-et-haut-potentiel-La-face-cachee" rel="noopener noreferrer">Acheter chez le libraire</a>
+			    </p>
+			</div>
 		    </div>
 		</div>
-	    </div>
-	    <div id="domaines" class="row">
-		<h1>Services</h1>
-		<h2>Bilans QI (bilan cognitif, évaluation neuropsychologique)</h2>
-		<ul>
-		    <li>Mieux comprendre ses modes de fonctionnement cérébral à tous les âges de la vie : WPSSI, WISC V, WAIS</li>
-		    <li>Pouvoir se situer par rapport à ses pairs de même âge, identifier ses forces et ses fragilités et mieux vivre son environnement scolaire ou social</li>
-		    <li>Utiliser le bilan comme un levier pour faciliter les apprentissages du jeune à tous les âges de la vie</li>
-		    <li>Assurer un suivi avec les autres professionnels et l’école, le collège, le lycée (Plan d’aide et d’accompagnement)</li>
-		</ul>
-		<h2>Bilans sur les difficultés d’attention et l’hyperactivité (TDAH)</h2>
-		Évaluer les risques ou les degrés d’intensité des difficultés d’attention avec ou sans hyperactivité : NEPSY II, TEAC-CH
-		<h2>Remédiation en neuropédagogie</h2>
-		Proposer des suivis en Neuro pégagogie pour apprendre, mémoriser plus facilement : techniques d’apprentissage et de mémorisation issues des Neurosciences pour tous publics, à tout âge
-		<h2>Test projectifs et de personnalités</h2>
-		Enfant, adolescent, adulte
-		Pour mieux le/se connaitre, comprendre l’origine de ses angoisses, apprivoiser ses ressentis émotionnels et clarifier ses besoins
-		<h2>Entretien motivationnel</h2>
-		Accompagner le changement : Pour découvrir et s’adapter à de nouveaux horizons professionnels et sociaux
-		<h2>Thérapie de couple et thérapie familiale</h2>
-		<ul>
-		    <li>Trouver sa place dans une relation de couple ou dans la dynamique familiale</li>
-		    <li>Analyser, comprendre et mieux vivre ces différents enjeux pour exercer son libre-arbitre avec succès.</li>
-		</ul>
-	    </div>
-	    <div class="row" id="info">
+	    </section>
+	    <section id="domaines" class="space-y-6">
+		<h1>Ce que je peux vous apporter</h1>
+		<div class="space-y-3">
+		    <h2 class="text-lg font-semibold text-[#212529]">Psychothérapie « non interprétative »</h2>
+		    <p>Accompagnement et prise en charge avec l’analyse existentielle</p>
+		</div>
+		<div class="space-y-3">
+		    <h2 class="text-lg font-semibold text-[#212529]">Bilan neuropsychologique complet</h2>
+		    <p>Évaluation approfondie du fonctionnement cognitif et émotionnel, comprenant :</p>
+		    <ul class="list-disc space-y-2 pl-6">
+			<li>un entretien clinique et des questionnaires</li>
+			<li>l’évaluation des échelles d’intelligence</li>
+			<li>une analyse clinique intégrée</li>
+			<li>une restitution orale explicative</li>
+			<li>un compte rendu écrit détaillé</li>
+			<li>un suivi</li>
+		    </ul>
+		</div>
+		<div class="space-y-3">
+		    <h2 class="text-lg font-semibold text-[#212529]">Bilan spécifique de l’attention et de la concentration</h2>
+		    <p>Indiqué en cas de difficultés attentionnelles, de fatigabilité cognitive, de lenteur ou de suspicion de TDAH.</p>
+		    <p>Il comprend :</p>
+		    <ul class="list-disc space-y-2 pl-6">
+			<li>des épreuves ciblées de l’attention et des fonctions exécutives</li>
+			<li>une analyse qualitative du fonctionnement attentionnel</li>
+			<li>une restitution orale et écrite avec le suivi et les recommandations les plus adaptées</li>
+		    </ul>
+		</div>
+		<div class="space-y-3">
+		    <h2 class="text-lg font-semibold text-[#212529]">Remédiation cognitive</h2>
+		    <p>Programme personnalisé visant le renforcement de l’attention, de la mémoire, de l’organisation et des stratégies cognitives.</p>
+		    <p>Forfait de 5 séances</p>
+		</div>
+		<div class="space-y-3">
+		    <h2 class="text-lg font-semibold text-[#212529]">Bilan de personnalité</h2>
+		    <p>Exploration des modes de fonctionnement émotionnel et relationnel « Entre adaptation et ressources »</p>
+		</div>
+	    </section>
+	    <section id="info" class="space-y-6">
 		<h1>Informations pratiques</h1>
-		<h2>Déroulement d’un rendez-vous</h2>
-		<p>Un rendez-vous, c’est d’abord une rencontre avec vous, en face à face, sans a priori et sans grille de lecture de l’autre. Vous êtes unique, il convient de vous créer un espace sécure, libre de toute interprétation. L’intention est de vous comprendre, non de vous expliquer.</p>
-		<p>Les horaires de consultation sont organisés pour que vous puissiez disposer d’un moment qui convienne à votre emploi du temps. Le respect des horaires donnés évite attente ou retard.</p>
-		<p>Il n’y a pas de salle d’attente, il suffit de venir à l’heure prévue.</p>
-		<p>Si le contexte s’y prête, des consultations peuvent se faire par téléphone ou vidéo.</p>
-		<h2>Durée et tarifs des consultations</h2>
-		<p>Un rendez-vous dure 45 minutes. Le règlement peut se faire par virement, chèques ou espèces (pas de carte de crédit)</p>
-		<ul>
-		    <li>Consultation : 70€</li>
-		    <li>Remédiation scolaire : 300€ les 3 séances</li>
-		    <li>Bilan cognitif (se fait uniquement après une première consultation) : 365€</li>
-		    <li>Tests projectifs : 300€</li>
-		    <li>Bilan neuropsychologique (NEPSY II, TEAC-CH) : entre 350€ et 450€ selon les modèles  d’identification</li>
-		    <li>Remédiation cognitive : selon les modalités de traitement</li>
-		</ul>
-		
-	    </div>
-	    
-	    <div class="row" id="contact">
+		<div class="space-y-3">
+		    <h2 class="text-lg font-semibold text-[#212529]">Déroulement d’un rendez-vous</h2>
+		    <p>Un rendez-vous, c’est d’abord une rencontre avec vous, en face à face, sans a priori et sans grille de lecture de l’autre. Vous êtes unique, il convient de vous créer un espace sécure, libre de toute interprétation. L’intention est de vous comprendre, non de vous expliquer.</p>
+		    <p>Les horaires de consultation sont organisés pour que vous puissiez disposer d’un moment qui convienne à votre emploi du temps. Le respect des horaires donnés évite attente ou retard.</p>
+		    <p>Il n’y a pas de salle d’attente, il suffit de venir à l’heure prévue.</p>
+		    <p>Si le contexte s’y prête, des consultations peuvent se faire par téléphone ou vidéo.</p>
+		</div>
+		<div class="space-y-3">
+		    <h2 class="text-lg font-semibold text-[#212529]">Durée et tarifs des consultations</h2>
+		    <p>Un rendez-vous dure 45 minutes. Le règlement peut se faire par virement, chèques ou espèces (pas de carte de crédit)</p>
+		    <ul class="list-disc space-y-2 pl-6">
+			<li>Consultation ou Psychothérapie : 75 €/séance</li>
+			<li>Bilan neuropsychologique complet : 400 €</li>
+			<li>Bilan de l’attention et de la concentration : 400 €</li>
+			<li>Guidance parentale : 85 €/séance</li>
+			<li>Remédiation cognitive – forfait 5 séances : 350 €</li>
+			<li>Bilan de personnalité : 250 €</li>
+		    </ul>
+		</div>
+	    </section>
+	    <section id="contact" class="space-y-4">
 		<h1>Contact</h1>
-		<div class="col-md-4">
-		    <address>
-			13 avenue de Bellet - Arrêt de tram <strong>Magnan</strong><br />
-			Bâtiment B, 3ème étage avec ascenseur (ou 2ème sans ascenseur)<br />
-			<strong>Téléphone</strong> <a href="tel:0685226205">06 85 22 62 05</a><br />
-			<strong>Email</strong> <a href="mailto:bonjour@francoiseastolfi.fr">bonjour@francoiseastolfi.fr</a><br>
-			<strong>Numéro ADELI</strong> 069315588
-		    </address>
-		</div>
-		<div class="col">
-		    <iframe title="Position du cabinet sur la carte de Nice" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2884.890169586514!2d7.241901015881135!3d43.69204667911998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cdd10a45133fed%3A0x75285af10f73b243!2sFrancoise%20ASTOLFI%20-%20Psychologue!5e0!3m2!1sen!2sfr!4v1629994428136!5m2!1sen!2sfr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-		</div>
-	    </div>
-	</div>
-	</div>
-
-	<div class="container">
-	    <footer class="text-center">
-		Françoise Astolfi — <a href="tel:0685226205">06 85 22 62 05</a> — <a href="#" class="link-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Mentions légales</a>
-	    </footer>
-	    
-	    <!-- Modal -->
-	    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog">
-		    <div class="modal-content">
-			<div class="modal-header">
-			    <h1 class="modal-title" id="exampleModalLabel">Mentions légales</h1>
-			    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
-			</div>
-			<div class="modal-body">
-			    <h4>Responsable éditorial</h4>
-			    <strong>Société Françoise Astolfi</strong><br>
-			    13 av de Bellet, 06200 Nice <br>
-			    <strong>SIRET</strong> 83303094300017<br>
+		<div class="grid gap-6 md:grid-cols-[minmax(0,1fr)_minmax(0,2fr)]">
+		    <div class="rounded-xl border border-[#dee2e6] bg-white/80 p-4 shadow-sm">
+			<address class="not-italic leading-relaxed text-[#212529]">
+			    13 avenue de Bellet - Arrêt de tram <strong>Magnan</strong><br />
+			    Bâtiment B, 3ème étage avec ascenseur (ou 2ème sans ascenseur)<br />
+			    <strong>Téléphone</strong> <a href="tel:0685226205">06 85 22 62 05</a><br />
+			    <strong>Email</strong> <a href="mailto:bonjour@francoiseastolfi.fr">bonjour@francoiseastolfi.fr</a><br />
 			    <strong>Numéro ADELI</strong> 069315588
-			    <h2>Hébergeur</h2>
-			    <a href="github.com" target="_blank" rel="noopener noreferer">Github pages</a>
-			    <h4>Cookies et mesure d’audience</h4>
-			    Google Analytics
-			</div>
+			</address>
+		    </div>
+		    <div class="overflow-hidden rounded-xl border border-[#dee2e6] shadow-sm">
+			<iframe class="h-[360px] w-full md:h-[450px]" title="Position du cabinet sur la carte de Nice" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2884.890169586514!2d7.241901015881135!3d43.69204667911998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cdd10a45133fed%3A0x75285af10f73b243!2sFrancoise%20ASTOLFI%20-%20Psychologue!5e0!3m2!1sen!2sfr!4v1629994428136!5m2!1sen!2sfr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 		    </div>
 		</div>
+	    </section>
+	</main>
+
+	<footer class="mx-auto max-w-5xl px-4 pb-10 text-center text-sm text-[#212529]">
+	    Françoise Astolfi — <a class="font-medium link-primary" href="tel:0685226205">06 85 22 62 05</a> — <button type="button" id="legal-open" class="font-medium link-primary underline decoration-[#0d6efd] underline-offset-4">Mentions légales</button>
+	</footer>
+
+	<dialog id="legal-dialog" class="w-full max-w-lg rounded-xl border border-[#dee2e6] bg-white p-0 shadow-lg">
+	    <div class="flex items-center justify-between border-b border-[#dee2e6] px-5 py-4">
+		<h2 class="text-lg font-semibold text-[#212529]">Mentions légales</h2>
+		<button type="button" id="legal-close" class="rounded-md border border-[#ced4da] px-3 py-1.5 text-sm font-medium text-[#212529] hover:border-[#adb5bd] hover:text-[#212529]">Fermer</button>
 	    </div>
-	</div>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	    <div class="space-y-4 px-5 py-4 text-sm text-[#212529]">
+		<div class="space-y-2">
+		    <p class="text-xs font-semibold uppercase tracking-wide text-[#6c757d]">Responsable éditorial</p>
+		    <p class="font-semibold text-[#212529]">Société Françoise Astolfi</p>
+		    <p>13 av de Bellet, 06200 Nice</p>
+		    <p><span class="font-semibold text-[#212529]">SIRET</span> 83303094300017</p>
+		    <p><span class="font-semibold text-[#212529]">Numéro ADELI</span> 069315588</p>
+		</div>
+		<div class="space-y-2">
+		    <p class="text-xs font-semibold uppercase tracking-wide text-[#6c757d]">Hébergeur</p>
+		    <a class="font-medium link-primary" href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub Pages</a>
+		</div>
+		<div class="space-y-2">
+		    <p class="text-xs font-semibold uppercase tracking-wide text-[#6c757d]">Cookies et mesure d’audience</p>
+		    <p>Google Analytics</p>
+		</div>
+	    </div>
+	</dialog>
 
 	<script>
-	  const navLinks = document.querySelectorAll('.nav-item');
-	  const menuToggle = document.getElementById('navbarText');
-	  const bsCollapse = new bootstrap.Collapse(menuToggle, {
-	      toggle: false
-	  });
-	  navLinks.forEach((l) => {
-	      l.addEventListener('click', () => { bsCollapse.toggle() });
-	  });
-	  //bsCollapse.toggle();
-	  //setTimeout((() => bsCollapse.toggle()), 400);
+	  const navToggle = document.getElementById('nav-toggle');
+	  const navMenu = document.getElementById('nav-menu');
+	  const navLinks = document.querySelectorAll('[data-nav-link]');
+	  const legalOpen = document.getElementById('legal-open');
+	  const legalDialog = document.getElementById('legal-dialog');
+	  const legalClose = document.getElementById('legal-close');
+
+	  if (navToggle && navMenu) {
+	      navToggle.addEventListener('click', () => {
+		  const isOpen = !navMenu.classList.contains('hidden');
+		  navMenu.classList.toggle('hidden');
+		  navToggle.setAttribute('aria-expanded', String(!isOpen));
+	      });
+
+	      navLinks.forEach((link) => {
+		  link.addEventListener('click', () => {
+		      if (window.innerWidth < 768) {
+			  navMenu.classList.add('hidden');
+			  navToggle.setAttribute('aria-expanded', 'false');
+		      }
+		  });
+	      });
+	  }
+
+	  if (legalOpen && legalDialog && legalClose) {
+	      legalOpen.addEventListener('click', () => legalDialog.showModal());
+	      legalClose.addEventListener('click', () => legalDialog.close());
+	      legalDialog.addEventListener('click', (event) => {
+		  if (event.target === legalDialog) {
+		      legalDialog.close();
+		  }
+	      });
+	  }
 	</script>
     </body>
 </html>
